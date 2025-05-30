@@ -8,13 +8,14 @@ import starter from "../assets/icons/starter.webp";
 import salad from "../assets/icons/salad.webp";
 import cafe from "../assets/icons/cafe.webp";
 import breakfast from "../assets/icons/breakfast.webp";
-import pizza from "../assets/icons/pizza.webp";
+import tea from "../assets/icons/tea.webp"
+// import pizza from "../assets/icons/pizza.webp";
 
 const categories = [
   { icon: starter, label: "پیش غذا" },
   { icon: salad, label: "سالاد", notice: "  هیچی بهتر از غذای سالم نی D : "  },
   { icon: cafe, label: "قهوه", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
-  { icon: pizza, label: " چای و دمنوش ", notice: " ی چای گرم خودتو مهمون کن  "  },
+  { icon: tea, label: " چای و دمنوش ", notice: " XD ساعت 9:30 شب روز 9 خرداد "  },
   { icon: breakfast, label: "صبحانه" },
 ];
 
