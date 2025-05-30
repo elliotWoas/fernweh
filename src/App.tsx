@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import MenuHeader from "./components/MenuHeader";
 import CategoryTabs from "./components/CategoryTabs";
 import NoticeBar from "./components/NoticeBar";
