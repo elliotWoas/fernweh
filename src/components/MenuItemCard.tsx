@@ -48,7 +48,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
         type="button"
         onClick={e => { e.stopPropagation(); onClick && onClick(); }}
         className="
-          !bg-orange-500 !hover:bg-orange-600
+          !bg-orange-600 !hover:bg-orange-800
           text-white
           rounded-lg
           px-4 py-2
