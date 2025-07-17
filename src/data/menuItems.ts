@@ -25,6 +25,15 @@ import Affogato from "../assets/cafe/coldBar/Affogato.jpg"
 import cockEspreso from "../assets/cafe/coldBar/cockEspreso.jpg"
 import hypeEspresso from "../assets/cafe/coldBar/hypeEspreso.jpg"
 
+// feed | خوراک
+import sibzaminiSade from "../assets/feed/sibzaminiSade.jpeg"
+import sibVip from "../assets/feed/sib-vip.webp"
+import snakSossis from "../assets/feed/esnak-sosis-egg.jpeg"
+import esnakZhanbon from "../assets/feed/esnak-zhanbon.jpg"
+import feeleSokhari from "../assets/feed/feeleSokhari.jpeg"
+import pastaAlferdo from "../assets/feed/pasta-alferedo.jpeg"
+// import
+
 
 
 // import capochino from "../assets/cafe/capochino.jpeg"
@@ -211,7 +220,7 @@ export const menuItems = [
 
     // خوراک
     {
-        image: tea,
+        image: sibzaminiSade,
         elementId: " خوراک ",
         title: " سیب زمینی ساده ",
         desc: "سیب زمینی سوخاری",
@@ -219,7 +228,7 @@ export const menuItems = [
         icon: "🍟",
     },
     {
-        image: tea,
+        image: sibVip,
         elementId: " خوراک ",
         title: " سیب زمینی باقارچ و پنیر ",
         desc: "سیب زمینی , قارچ , پنیر",
@@ -235,7 +244,7 @@ export const menuItems = [
         icon: "🥗",
     },
     {
-        image: tea,
+        image: pastaAlferdo,
         elementId: " خوراک ",
         title: " پاستاآلفردو ",
         desc: "",
@@ -243,7 +252,7 @@ export const menuItems = [
         icon: "🍝",
     },
     {
-        image: tea,
+        image: feeleSokhari,
         elementId: " خوراک ",
         title: " فیله سوخاری ",
         desc: "",
@@ -251,7 +260,7 @@ export const menuItems = [
         icon: "🥠",
     },
     {
-        image: tea,
+        image: esnakZhanbon,
         elementId: " خوراک ",
         title: " اسنک ژامبون ",
         desc: "",
@@ -259,20 +268,20 @@ export const menuItems = [
         icon: "🥩",
     },
     {
-        image: tea,
-        elementId: " خوراک ",
-        title: " اسنک دلخواه ",
-        desc: "",
-        price: "150,000",
-        icon: "🥩",
-    },
-    {
-        image: tea,
+        image: snakSossis,
         elementId: " خوراک ",
         title: " اسنک سوسیس و تخم مرغ ",
         desc: "",
         price: "100,000",
         icon: "🌭",
+    },
+    {
+        image: esnakZhanbon,
+        elementId: " خوراک ",
+        title: " اسنک دلخواه ",
+        desc: "",
+        price: "150,000",
+        icon: "🥩",
     },
 
     // چای و دمنوش 
