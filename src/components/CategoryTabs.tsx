@@ -12,11 +12,13 @@ import tea from "../assets/icons/tea.webp"
 // import pizza from "../assets/icons/pizza.webp";
 
 const categories = [
-  { icon: starter, label: "پیش غذا" },
-  { icon: salad, label: "سالاد", notice: "  هیچی بهتر از غذای سالم نی D : "  },
-  { icon: cafe, label: "قهوه", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
-  { icon: tea, label: " چای و دمنوش ", notice: " XD ساعت 9:30 شب روز 9 خرداد "  },
-  { icon: breakfast, label: "صبحانه" },
+  { icon: starter, label: " نوشیدنی گرم ", notice: ""},
+  { icon: cafe, label: " بار گرم ", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
+  { icon: salad, label: " بار سرد ", notice: ""  },
+  { icon: cafe, label: " خوراک ", notice: "" },
+  { icon: tea, label: " چای دمنوش ", notice: ""  },
+  { icon: tea, label: " اسموتی موکتل ", notice: " کنارش کوکی هم امتحان کن :)"  },
+  { icon: breakfast, label: " شیک " },
 ];
 
 interface CategoryTabsProps {
