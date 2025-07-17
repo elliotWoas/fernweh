@@ -16,6 +16,17 @@ import makachino from "../assets/cafe/hotBar/makachino.jpeg"
 import moca from "../assets/cafe/hotBar/moca.jpeg"
 import cafeToork from "../assets/cafe/hotBar/cafe-toork.jpeg"
 
+//cold bar
+import icedAmericano from "../assets/cafe/coldBar/iced americano.jpg"
+import iceLatte from "../assets/cafe/coldBar/iceLatte.jpg"
+import icedCaramelMakiyato from "../assets/cafe/coldBar/icedCaramelMakiyato.jpg"
+import iceMoca from "../assets/cafe/coldBar/iceMoca.jpg"
+import Affogato from "../assets/cafe/coldBar/Affogato.jpg"
+import cockEspreso from "../assets/cafe/coldBar/cockEspreso.jpg"
+import hypeEspresso from "../assets/cafe/coldBar/hypeEspreso.jpg"
+
+
+
 // import capochino from "../assets/cafe/capochino.jpeg"
 import sezarGril from "../assets/salad/sezar-gril.webp"
 import sezarSokhari from "../assets/salad/sezar-sokhari.webp"
@@ -142,7 +153,7 @@ export const menuItems = [
 
     //  بار سرد
     {
-        image: sezarGril,
+        image: icedAmericano,
         elementId: " بار سرد ",
         title: " آیس آمریکانو ",
         desc: "",
@@ -150,7 +161,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: sezarGril,
+        image: iceLatte,
         elementId: " بار سرد ",
         title: " آیس لته ",
         desc: "",
@@ -158,7 +169,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: sezarGril,
+        image: iceMoca,
         elementId: " بار سرد ",
         title: " آیس موکا ",
         desc: "",
@@ -166,7 +177,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: latte,
+        image: icedCaramelMakiyato,
         elementId: " بار سرد ",
         title: " آیس کارامل ماکیاتو ",
         desc: "",
@@ -174,7 +185,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: americano,
+        image: Affogato,
         elementId: " بار سرد ",
         title: " آفوگاتو ",
         desc: "",
@@ -182,7 +193,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: americano,
+        image: cockEspreso,
         elementId: " بار سرد ",
         title: " کوک اسپرسو ",
         desc: "",
@@ -190,7 +201,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: americano,
+        image: hypeEspresso,
         elementId: " بار سرد ",
         title: "  هایپ اسپرسو ",
         desc: "",
