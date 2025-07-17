@@ -1,3 +1,20 @@
+//hot drinks
+import milkchocolate from "../assets/cafe/hotDrinks/milkChocolate.jpeg"
+import nescafeMilk from "../assets/cafe/hotDrinks/nescafeMilk.jpeg"
+import hazlnutHot from "../assets/cafe/hotDrinks/hazelnutHot.jpeg"
+import honeyCinnamonMilk from "../assets/cafe/hotDrinks/honeyCinnamonMilk.jpeg"
+import masala from "../assets/cafe/hotDrinks/masala.jpeg"
+import hotChocolate from "../assets/cafe/hotDrinks/hotChocolate.jpeg"
+
+//hot bar
+import espresso from "../assets/cafe/hotBar/espresso.jpeg"
+import americano from "../assets/cafe/hotBar/americano.webp"
+import capochinop from "../assets/cafe/hotDrinks/capochino.webp"
+import latte from "../assets/cafe/hotBar/latte.jpeg"
+import macchiato from "../assets/cafe/hotBar/macchiato.jpeg"
+import makachino from "../assets/cafe/hotBar/makachino.jpeg"
+import moca from "../assets/cafe/hotBar/moca.jpeg"
+import cafeToork from "../assets/cafe/hotBar/cafe-toork.jpeg"
 
 // import capochino from "../assets/cafe/capochino.jpeg"
 import sezarGril from "../assets/salad/sezar-gril.webp"
