@@ -32,7 +32,16 @@ import snakSossis from "../assets/feed/esnak-sosis-egg.jpeg"
 import esnakZhanbon from "../assets/feed/esnak-zhanbon.jpg"
 import feeleSokhari from "../assets/feed/feeleSokhari.jpeg"
 import pastaAlferdo from "../assets/feed/pasta-alferedo.jpeg"
-// import
+import chickenPasta from "../assets/pasta/chicken-pasta.webp"
+import saladSezar from "../assets/salad/salad-sezar.jpeg"
+
+//tea
+import teaGreen from "../assets/tea/tea-green.webp"
+import golGavZaban from "../assets/tea/golGavZaban.jpeg"
+import parobadi from "../assets/tea/parobadi.webp"
+import sarmakhordegi from "../assets/tea/sarmakhordegi.jpeg"
+import tea2 from "../assets/tea/tea2.webp"
+import teaHoney from "../assets/tea/teaHoneyLimo.jpeg"
 
 
 
@@ -41,7 +50,6 @@ import pastaAlferdo from "../assets/feed/pasta-alferedo.jpeg"
 // import sezarSokhari from "../assets/salad/sezar-sokhari.webp"
 // import espereso from "../assets/cafe/espereso.webp"
 import tea from "../assets/tea/tea.webp"
-import parobadi from "../assets/tea/parobadi.webp"
 
 export const menuItems = [
 
@@ -236,7 +244,7 @@ export const menuItems = [
         icon: "🍟",
     },
     {
-        image: tea,
+        image: saladSezar,
         elementId: " خوراک ",
         title: " سالاد سزار ",
         desc: "",
@@ -294,7 +302,7 @@ export const menuItems = [
         icon: "🍵",
     },
     {
-        image: tea,
+        image: teaGreen,
         elementId: " چای دمنوش ",
         title: " چای سبز ",
         desc: "",
@@ -302,7 +310,7 @@ export const menuItems = [
         icon: "🍵",
     },
     {
-        image: tea,
+        image: teaHoney,
         elementId: " چای دمنوش ",
         title: " چای عسل و لیمو ",
         desc: "",
@@ -310,7 +318,7 @@ export const menuItems = [
         icon: "🍵",
     },
     {
-        image: tea,
+        image: sarmakhordegi,
         elementId: " چای دمنوش ",
         title: " دمنوش سرماخوردگی ",
         desc: "",
@@ -318,7 +326,7 @@ export const menuItems = [
         icon: "🍵",
     },
     {
-        image: tea,
+        image: golGavZaban,
         elementId: " چای دمنوش ",
         title: " دمنوش گل گاوزبان و لیمو ",
         desc: "",
@@ -326,7 +334,7 @@ export const menuItems = [
         icon: "🍵",
     },
     {
-        image: tea,
+        image: tea2,
         elementId: " چای دمنوش ",
         title: " چای دونفره ",
         desc: "",
