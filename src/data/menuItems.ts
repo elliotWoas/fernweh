@@ -32,7 +32,6 @@ import snakSossis from "../assets/feed/esnak-sosis-egg.jpeg"
 import esnakZhanbon from "../assets/feed/esnak-zhanbon.jpg"
 import feeleSokhari from "../assets/feed/feeleSokhari.jpeg"
 import pastaAlferdo from "../assets/feed/pasta-alferedo.jpeg"
-import chickenPasta from "../assets/pasta/chicken-pasta.webp"
 import saladSezar from "../assets/salad/salad-sezar.jpeg"
 
 //tea
@@ -40,10 +39,18 @@ import teaGreen from "../assets/tea/tea-green.webp"
 import golGavZaban from "../assets/tea/golGavZaban.jpeg"
 import parobadi from "../assets/tea/parobadi.webp"
 import sarmakhordegi from "../assets/tea/sarmakhordegi.jpeg"
-import tea2 from "../assets/tea/tea2.webp"
+import tea2 from "../assets/tea/tea2.jpeg"
 import teaHoney from "../assets/tea/teaHoneyLimo.jpeg"
 
-
+// Stylish
+import limonad from "../assets/Smoothies/limonad.jpeg"
+import bladred from "../assets/smoothies/bladred.jpeg"
+import cherryBerry from "../assets/smoothies/cherryBerry.jpeg"
+import jamaica from "../assets/smoothies/jamaica.jpeg"
+import blueLime from "../assets/smoothies/blueLime.jpeg"
+import pinacolada from "../assets/smoothies/pinacolada.jpeg"
+import limonadCoffee from "../assets/Smoothies/limonadGahve.jpeg"
+import mohito from "../assets/Smoothies/mohito.jpeg"
 
 // import capochino from "../assets/cafe/capochino.jpeg"
 // import sezarGril from "../assets/salad/sezar-gril.webp"
@@ -344,7 +351,7 @@ export const menuItems = [
 
     // اسموتی و موکتل
     {
-        image: tea,
+        image: limonad,
         elementId: " اسموتی موکتل ",
         title: " لیموناد ",
         desc: "",
@@ -352,7 +359,7 @@ export const menuItems = [
         icon: "🍋",
     },
     {
-        image: tea,
+        image: limonadCoffee,
         elementId: " اسموتی موکتل ",
         title: " لیموناد قهوه ",
         desc: "",
@@ -360,7 +367,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: mohito,
         elementId: " اسموتی موکتل ",
         title: " موهیتو ",
         desc: "",
@@ -368,7 +375,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: blueLime,
         elementId: " اسموتی موکتل ",
         title: " بلولایم ",
         desc: "",
@@ -376,7 +383,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: jamaica,
         elementId: " اسموتی موکتل ",
         title: " جامایکا ",
         desc: "",
@@ -384,7 +391,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: cherryBerry,
         elementId: " اسموتی موکتل ",
         title: " چری بری ",
         desc: "",
@@ -392,7 +399,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: bladred,
         elementId: " اسموتی موکتل ",
         title: " بلاد رد ",
         desc: "",
@@ -400,7 +407,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: tea,
+        image: pinacolada,
         elementId: " اسموتی موکتل ",
         title: " پیناکولادا ",
         desc: "",
