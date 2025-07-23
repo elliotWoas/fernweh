@@ -44,11 +44,11 @@ import teaHoney from "../assets/tea/teaHoneyLimo.jpeg"
 
 // Stylish
 import limonad from "../assets/Smoothies/limonad.jpeg"
-import bladred from "../assets/smoothies/bladred.jpeg"
-import cherryBerry from "../assets/smoothies/cherryBerry.jpeg"
-import jamaica from "../assets/smoothies/jamaica.jpeg"
-import blueLime from "../assets/smoothies/blueLime.jpeg"
-import pinacolada from "../assets/smoothies/pinacolada.jpeg"
+import bladred from "../assets/Smoothies/bladred.jpeg"
+import cherryBerry from "../assets/Smoothies/cherryBerry.jpeg"
+import jamaica from "../assets/Smoothies/jamaica.jpeg"
+import blueLime from "../assets/Smoothies/blueLime.jpeg"
+import pinacolada from "../assets/Smoothies/pinacolada.jpeg"
 import limonadCoffee from "../assets/Smoothies/limonadGahve.jpeg"
 import mohito from "../assets/Smoothies/mohito.jpeg"
 
