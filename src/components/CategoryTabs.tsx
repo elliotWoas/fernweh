@@ -9,12 +9,13 @@ import salad from "../assets/icons/salad.webp";
 import cafe from "../assets/icons/cafe.webp";
 import breakfast from "../assets/icons/breakfast.webp";
 import tea from "../assets/icons/tea.webp"
+import coldDrinks from "../assets/icons/cold-drinks.webp";
 // import pizza from "../assets/icons/pizza.webp";
 
 const categories = [
   { icon: starter, label: " نوشیدنی گرم ", notice: ""},
   { icon: cafe, label: " بار گرم ", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
-  { icon: salad, label: " بار سرد ", notice: ""  },
+  { icon: coldDrinks, label: " بار سرد ", notice: ""  },
   { icon: cafe, label: " خوراک ", notice: "" },
   { icon: tea, label: " چای دمنوش ", notice: ""  },
   { icon: tea, label: " اسموتی موکتل ", notice: " کنارش کوکی هم امتحان کن :)"  },
