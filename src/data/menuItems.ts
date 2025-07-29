@@ -52,6 +52,14 @@ import pinacolada from "../assets/Smoothies/pinacolada.jpeg"
 import limonadCoffee from "../assets/Smoothies/limonadGahve.jpeg"
 import mohito from "../assets/Smoothies/mohito.jpeg"
 
+// Stylish | شیک
+import totfarangi from "../assets/Stylish/totfarangi.jpeg"
+import badamzamini from "../assets/Stylish/badamzamini.jpeg"
+import coffe from "../assets/Stylish/coffe.jpeg"
+import vanil from "../assets/Stylish/vanil.jpeg"
+import notela from "../assets/Stylish/notela.jpeg"
+import mozchocolat from "../assets/Stylish/mozchocolat.jpeg"
+import cakeroz from "../assets/Stylish/cakeroz.jpeg"
 // import capochino from "../assets/cafe/capochino.jpeg"
 // import sezarGril from "../assets/salad/sezar-gril.webp"
 // import sezarSokhari from "../assets/salad/sezar-sokhari.webp"
@@ -417,7 +425,7 @@ export const menuItems = [
 
     // شیک
     {
-        image: tea,
+        image: totfarangi,
         elementId: " شیک ",
         title: " توت فرنگی ",
         desc: "",
@@ -425,7 +433,7 @@ export const menuItems = [
         icon: "🍓🍷",
     },
     {
-        image: parobadi,
+        image: vanil,
         elementId: " شیک ",
         title: " وانیل ",
         desc: "",
@@ -433,7 +441,7 @@ export const menuItems = [
         icon: "🍨",
     },
     {
-        image: tea,
+        image: badamzamini,
         elementId: " شیک ",
         title: " بادام زمینی ",
         desc: "",
@@ -441,7 +449,7 @@ export const menuItems = [
         icon: "🥤",
     },
     {
-        image: parobadi,
+        image: coffe,
         elementId: " شیک ",
         title: " قهوه ",
         desc: "",
@@ -449,7 +457,7 @@ export const menuItems = [
         icon: "☕",
     },
     {
-        image: tea,
+        image: milkchocolate,
         elementId: " شیک ",
         title: " شکلات ",
         desc: "",
@@ -457,7 +465,7 @@ export const menuItems = [
         icon: "🍫",
     },
     {
-        image: parobadi,
+        image: mozchocolat,
         elementId: " شیک ",
         title: " موز شکلات ",
         desc: "",
@@ -465,7 +473,7 @@ export const menuItems = [
         icon: "🍌🍫",
     },
     {
-        image: tea,
+        image: notela,
         elementId: " شیک ",
         title: " نوتلا ",
         desc: "",
@@ -473,7 +481,7 @@ export const menuItems = [
         icon: "🧁",
     },
     {
-        image: parobadi,
+        image: cakeroz,
         elementId: " شیک ",
         title: " کیک روز ",
         desc: "",
