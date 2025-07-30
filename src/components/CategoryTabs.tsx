@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import starter from "../assets/icons/starter.webp";
-import salad from "../assets/icons/salad.webp";
+// import salad from "../assets/icons/salad.webp";
 import cafe from "../assets/icons/cafe.webp";
 import breakfast from "../assets/icons/breakfast.webp";
 import tea from "../assets/icons/tea.webp"

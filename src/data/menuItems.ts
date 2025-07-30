@@ -37,7 +37,7 @@ import saladSezar from "../assets/salad/salad-sezar.jpeg"
 //tea
 import teaGreen from "../assets/tea/tea-green.webp"
 import golGavZaban from "../assets/tea/golGavZaban.jpeg"
-import parobadi from "../assets/tea/parobadi.webp"
+// import parobadi from "../assets/tea/parobadi.webp"
 import sarmakhordegi from "../assets/tea/sarmakhordegi.jpeg"
 import tea2 from "../assets/tea/tea2.jpeg"
 import teaHoney from "../assets/tea/teaHoneyLimo.jpeg"
