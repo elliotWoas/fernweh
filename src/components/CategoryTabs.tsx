@@ -9,7 +9,7 @@ import starter from "../assets/icons/starter.webp";
 import cafe from "../assets/icons/cafe.webp";
 import breakfast from "../assets/icons/breakfast.webp";
 import tea from "../assets/icons/tea.webp"
-import coldDrinks from "../assets/icons/cold-drinks.webp";
+import coldDrinks from "../assets/icons/Cold-Coffee-Based-1.svg";
 // import pizza from "../assets/icons/pizza.webp";
 
 const categories = [
