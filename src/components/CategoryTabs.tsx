@@ -4,22 +4,24 @@ import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import starter from "../assets/icons/starter.webp";
-// import salad from "../assets/icons/salad.webp";
+//icon
 import cafe from "../assets/icons/cafe.webp";
 import breakfast from "../assets/icons/breakfast.webp";
 import tea from "../assets/icons/tea.webp"
 import coldDrinks from "../assets/icons/Cold-Coffee-Based-1.svg";
-// import pizza from "../assets/icons/pizza.webp";
+import hotCoffe from "../assets/icons/Hot-Coffee-Based.svg"
+import smothiesMocketle from "../assets/icons/smothiesMocktel.png";
+import shake from "../assets/icons/shake.png"
+
 
 const categories = [
-  { icon: starter, label: " نوشیدنی گرم ", notice: ""},
+  { icon: hotCoffe, label: " نوشیدنی گرم ", notice: ""},
   { icon: cafe, label: " بار گرم ", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
   { icon: coldDrinks, label: " بار سرد ", notice: ""  },
-  { icon: cafe, label: " خوراک ", notice: "" },
+  { icon: breakfast, label: " خوراک ", notice: "" },
   { icon: tea, label: " چای دمنوش ", notice: ""  },
-  { icon: tea, label: " اسموتی موکتل ", notice: " کنارش کوکی هم امتحان کن :)"  },
-  { icon: breakfast, label: " شیک " },
+  { icon: smothiesMocketle, label: " اسموتی موکتل ", notice: " کنارش کوکی هم امتحان کن :)"  },
+  { icon: shake, label: " شیک " },
 ];
 
 interface CategoryTabsProps {
