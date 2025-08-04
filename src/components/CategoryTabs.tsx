@@ -17,7 +17,7 @@ import shake from "../assets/icons/shake.png"
 const categories = [
   { icon: hotCoffe, label: " نوشیدنی گرم ", notice: ""},
   { icon: cafe, label: " بار گرم ", notice: " یروز یادت بره. اون روز بی حالی  : ) " },
-  { icon: coldDrinks, label: " بار سرد ", notice: ""  },
+  { icon: coldDrinks, label: " بار سرد ", notice: " تو این گرما میچسبه 🥵 "  },
   { icon: breakfast, label: " خوراک ", notice: "" },
   { icon: tea, label: " چای دمنوش ", notice: ""  },
   { icon: smothiesMocketle, label: " اسموتی موکتل ", notice: " کنارش کوکی هم امتحان کن :)"  },
