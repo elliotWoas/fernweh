@@ -30,11 +30,11 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
     "
   >
     {/* Top row: image + title */}
-    <div className="flex flex-row-reverse items-start p-4 gap-4">
+    <div className="flex flex-row-reverse items-start p-3 gap-3">
       <img
         src={image}
         alt={title}
-        className="w-24 h-24 rounded-lg object-cover flex-shrink-0"
+        className="w-28 h-28 rounded-lg object-cover flex-shrink-0"
       />
       <div className="flex-1 text-right">
         <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
@@ -43,21 +43,51 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
     </div>
 
     {/* Bottom row: price on left, orange button on right */}
-    <div className="flex flex-row-reverse items-center justify-between px-4 pb-4">
+    <div className="flex flex-row-reverse items-center justify-between px-3 pb-2">
       <button
         type="button"
-        onClick={e => { e.stopPropagation(); onClick && onClick(); }}
+        onClick={(e) => { e.stopPropagation(); onClick?.(); }}
         className="
-          !bg-orange-600 !hover:bg-orange-800
-          text-white
+          relative
+          w-29
+          h-9
+          cursor-pointer
+          overflow-visible
+          bg-black
+          px-12 py-6
+          text-[1.1rem] font-semibold text-black
+          transition-all duration-[400ms] ease-[cubic-bezier(0.25,0.1,0.25,1)]
+          border-2 border-[#0ff]
+          shadow-[0_0_10px_rgba(0,155,255,0.3)]
           rounded-lg
-          px-4 py-2
-          text-sm font-medium
-          focus:outline-none
-          transition
+          z-[1]
+          before:content-['']
+          before:absolute
+          before:inset-[-3px]
+          before:border-2
+          before:border-[#BDBDBD]
+          before:rounded-[inherit]
+          before:opacity-0
+          before:animate-[pulseOut_2s_ease-out_infinite]
+          after:content-['']
+          after:absolute
+          after:inset-[-1px]
+          after:border-2
+          after:border-[#646666]
+          after:rounded-[inherit]
+          after:opacity-0
+          after:animate-[pulseOut_2s_ease-out_infinite]
+          after:[animation-delay:1s]
         "
-      >
-        افزودن
+        // !bg-orange-600 !hover:bg-orange-800
+        // text-white
+        // rounded-lg
+        // px-4 py-2
+        // text-sm font-medium
+        // focus:outline-none
+        // transition
+        >
+          گارسون
       </button>
       <span className="text-lg font-semibold text-gray-900">
         {price} <span className="text-xs text-gray-500">تومان</span>
