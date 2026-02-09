@@ -65,7 +65,7 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ onCategorySelect }) => {
   return (
     <div className={`transition-all duration-300 ${isSticky ? 'fixed top-0 left-0 right-0 z-50 transform translate-y-0' : 'fixed -top-20 left-0 right-0 z-50 transform -translate-y-full'}`}>
       <div className="bg-white/10 backdrop-blur-md shadow-sm border-b border-gray-200 w-full">
-        <div className="px-4 pt-3 rtl">
+        <div className="px-2 pt-2 rtl">
           <Swiper
             modules={[Navigation]}
             spaceBetween={10}
@@ -77,7 +77,7 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ onCategorySelect }) => {
               <SwiperSlide key={cat.label} className="!w-auto snap-start">
                 <button
                   onClick={() => handleCategorySelect(cat.label)}
-                  className={`flex flex-col items-center justify-center rounded-xl min-w-[80px] px-4 py-2 transition-all shadow
+                  className={`flex flex-col items-center justify-center rounded-xl min-w-[70px] px-4 py-2 transition-all shadow
                     ${selected === cat.label
                       ? "bg-red-500 text-black border border-red-500"
                       : "bg-white text-black border border-gray-200 hover:shadow-md"
@@ -90,7 +90,7 @@ const CategoryTabs: React.FC<CategoryTabsProps> = ({ onCategorySelect }) => {
             ))}
           </Swiper>
         </div>
-
+            {/* notice bar */}
         {categories.find(c => c.label === selected)?.notice && (
           <div className="bg-red-100 border border-red-500 text-red-700 rounded-lg px-4 py-2 flex mt-2 mx-2 items-center gap-2 rtl my-2">
             <div className="flex gap-1 items-center">
