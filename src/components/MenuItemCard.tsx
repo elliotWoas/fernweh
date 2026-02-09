@@ -20,29 +20,29 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
     role="button"
     className="
       bg-white
-      rounded-2xl
+      rounded-3xl
       border border-gray-300
       shadow-sm hover:shadow-md
       transition
       overflow-hidden
-      max-w-[380px] w-full mx-auto
+      max-w-[360px] w-full mx-auto
       cursor-pointer
     "
   >
     {/* Top row: image + title */}
-    <div className="flex flex-row-reverse items-start p-3 gap-3">
+    <div className="flex flex-row-reverse items-start p-2 gap-3">
       <img
         src={image}
         alt={title}
-        className="w-28 h-28 rounded-lg object-cover flex-shrink-0"
+        className="w-28 h-26 rounded-lg object-cover flex-shrink-0"
       />
       <div className="flex-1 text-right">
-        <h3 className="text-lg font-semibold text-gray-800">{title}</h3>
-        <p className="text-sm text-gray-500 mt-1">{desc}</p>
+        <h3 className="text-lg font-semibold text-gray-800 pr-2 mt-2">{title}</h3>
+        <p className="text-sm text-gray-500 pr-2 mt-2">{desc}</p>
       </div>
     </div>
 
-    {/* Bottom row: price on left, orange button on right */}
+    {/* Bottom row: گارسون on left, price button on right */}
     <div className="flex flex-row-reverse items-center justify-between px-3 pb-2">
       <button
         type="button"
@@ -89,7 +89,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
         >
           گارسون
       </button>
-      <span className="text-lg font-semibold text-gray-900">
+      <span className="text-lg font-semibold text-gray-900 pr-2">
         {price} <span className="text-xs text-gray-500">تومان</span>
       </span>
     </div>
