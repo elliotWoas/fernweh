@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState , useEffect} from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/css";
@@ -30,63 +30,81 @@ interface CategoryTabsProps {
 
 const CategoryTabs: React.FC<CategoryTabsProps> = ({ onCategorySelect }) => {
   const [selected, setSelected] = useState("");
+  const [isSticky, setIsSticky] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      // Show tabs when scrolled down 100px
+      if (window.scrollY > 100) {
+        setIsSticky(true);
+      } else {
+        setIsSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    
+    // Cleanup
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
 
   const handleCategorySelect = (category: string) => {
     setSelected(category);
     onCategorySelect(category);
     const element = document.getElementById(category);
     if (element) {
-      // Get the height of the sticky tabs for offset
       const tabsHeight = document.querySelector('.sticky-tabs')?.getBoundingClientRect().height || 0;
       const elementPosition = element.getBoundingClientRect().top + window.pageYOffset;
       window.scrollTo({
-        top: elementPosition - tabsHeight - 10, // 10px extra padding
+        top: elementPosition - tabsHeight - 10,
         behavior: 'smooth'
       });
     }
   };
 
   return (
-    <div className="bg-white/80 backdrop-blur-md shadow-sm border-b border-gray-200 w-full">
-      <div className="px-4 pt-3 rtl">
-        <Swiper
-          modules={[Navigation]}
-          spaceBetween={10}
-          slidesPerView={"auto"}
-          className="!overflow-visible"
-          dir="rtl"
-        >
-          {categories.map((cat) => (
-            <SwiperSlide key={cat.label} className="!w-auto snap-start">
-              <button
-                onClick={() => handleCategorySelect(cat.label)}
-                className={`flex flex-col items-center justify-center rounded-xl min-w-[80px] px-4 py-2 transition-all shadow
-                  ${selected === cat.label
-                    ? "bg-red-500 text-black border border-red-500"
-                    : "bg-white text-black border border-gray-200 hover:shadow-md"
-                  }`}
-              >
-                <img src={cat.icon} alt={cat.label} className="w-10 h-10 mb-2" />
-                <span className="text-sm font-semibold whitespace-nowrap">{cat.label}</span>
-              </button>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-      </div>
-
-      {categories.find(c => c.label === selected)?.notice && (
-        <div className="bg-red-100 border border-red-500 text-red-700 rounded-lg px-4 py-2 flex mt-2 mx-2 items-center gap-2 rtl my-2">
-          <div className="flex gap-1 items-center">
-            <img
-              src={categories.find(c => c.label === selected)?.icon}
-              alt={selected}
-              className="w-8 h-8"
-            />
-            <span className="text-lg">{selected}</span>
-            <span className="text-base">- {categories.find(c => c.label === selected)?.notice}</span>
-          </div>
+    <div className={`transition-all duration-300 ${isSticky ? 'fixed top-0 left-0 right-0 z-50 transform translate-y-0' : 'fixed -top-20 left-0 right-0 z-50 transform -translate-y-full'}`}>
+      <div className="bg-white/10 backdrop-blur-md shadow-sm border-b border-gray-200 w-full">
+        <div className="px-4 pt-3 rtl">
+          <Swiper
+            modules={[Navigation]}
+            spaceBetween={10}
+            slidesPerView={"auto"}
+            className="!overflow-visible"
+            dir="rtl"
+          >
+            {categories.map((cat) => (
+              <SwiperSlide key={cat.label} className="!w-auto snap-start">
+                <button
+                  onClick={() => handleCategorySelect(cat.label)}
+                  className={`flex flex-col items-center justify-center rounded-xl min-w-[80px] px-4 py-2 transition-all shadow
+                    ${selected === cat.label
+                      ? "bg-red-500 text-black border border-red-500"
+                      : "bg-white text-black border border-gray-200 hover:shadow-md"
+                    }`}
+                >
+                  <img src={cat.icon} alt={cat.label} className="w-10 h-10 mb-2" />
+                  <span className="text-sm font-semibold whitespace-nowrap">{cat.label}</span>
+                </button>
+              </SwiperSlide>
+            ))}
+          </Swiper>
         </div>
-      )}
+
+        {categories.find(c => c.label === selected)?.notice && (
+          <div className="bg-red-100 border border-red-500 text-red-700 rounded-lg px-4 py-2 flex mt-2 mx-2 items-center gap-2 rtl my-2">
+            <div className="flex gap-1 items-center">
+              <img
+                src={categories.find(c => c.label === selected)?.icon}
+                alt={selected}
+                className="w-8 h-8"
+              />
+              <span className="text-lg">{selected}</span>
+              <span className="text-base">- {categories.find(c => c.label === selected)?.notice}</span>
+            </div>
+          </div>
+        )}
+      </div>
     </div>
   );
 };
