@@ -40,6 +40,9 @@ body {
   min-height: 100vh;
   width: 100%;
   position: relative;
+  /* Force phone size on all devices */
+  max-width: 480px; /* Standard phone width */
+  margin: 0 auto; /* Center the content on larger screens */
 }
 
 /* Replace the sticky-header class with these new classes */
