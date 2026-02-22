@@ -2,52 +2,54 @@ import React from "react";
 // import brandLogo from "../assets/FernwehLogo.jpg";
 // import phoneIcon from "../assets/phone.svg";
 // import cafe from "../assets/icons/cafe.webp";
-
+// import shirazInside from '../assets/Shiraz-Inside-Branch-There.webp'
+import logoMohit from '../assets/logo-mohit.png'
+import mohite from '../assets/cafemohit.jpg'
 const MenuHeader: React.FC = () => (
 <header className="rtl">
   <section>
     {(
       <>
         {/* Cafe Logo */}
-        <div className="absolute w-18 h-18 right-65 mt-[calc(100vw*3/4-84px)] rounded-full border-2 border-white/50 shadow-lg z-20 overflow-hidden">
+        <div className="absolute w-18 h-18 right-65 mt-[calc(100vw*3/4-63px)] rounded-full border-2 border-white/50 shadow-lg z-20 overflow-hidden">
           <img 
             className="w-full h-full object-cover" 
-            src={"../src/assets/Lamiz-logo.webp"} 
+            src={logoMohit} 
             alt="Cafe Logo" 
           />
         </div>
         
         {/* Background Cover Image */}
         <img 
-          className="w-full h-[calc(100vw*4/4)] rounded-2xl object-cover" 
-          src={"../src/assets/Shiraz-Inside-Branch-There.webp"} 
+          className="w-full h-[calc(100vw*4/4)] rounded-b-4xl object-cover" 
+          src={mohite} 
           alt="Cafe Cover" 
         />
         
         {/* Glassmorphism Card */}
-        <div className="relative z-10 mx-4 -mt-35 rounded-2xl backdrop-blur-xs bg-white/3 bg-opacity-10 border border-white/10 shadow p-4">
-          <h1 className="font-medium text-2xl text-white drop-shadow">{" قهوه لمیز "}</h1>
+        <div className="relative z-10 mx-4 -mt-29 rounded-2xl backdrop-blur-xs bg-white/3 bg-opacity-10 border border-white/10 shadow p-4">
+          <h2 className="font-medium text-4xl text-green-300 drop-shadow">{" کافه محیط "}</h2>
           
           {/* Cafe Description */}
-          <p className="mt-2.5 text-lm text-white/90 drop-shadow">{" نیازی به توضیح نیست : ) "}</p>
+          <p className="mt-2.5 text-lm text-white/90 drop-shadow">{" محیطی برای ساختن لحظه‌های موندگار. "}</p>
           
           {/* Cafe Details */}
           <div className="flex mt-3 text-sm justify-between items-center">
             {/* Rating */}
             <div className="flex items-center text-white drop-shadow">
-              <span className="material-symbols-rounded text-base mr-1 text-amber-300">star</span>
-              <span>{"4.9 (212)"}</span>
+              <span className="material-symbols-rounded text-base mr-1 text-green-300"> امتیاز </span>
+              <span className=" text-yellow-400">{"4.9 (212)"}</span>
             </div>
             
             {/* Delivery Time */}
             <div className="flex items-center text-white drop-shadow">
-              <span className="material-symbols-rounded text-base mr-1 text-blue-300">schedule</span>
-              <span>{" 5-15 دقیقه "}</span>
+              <span className="material-symbols-rounded text-base mr-1 text-green-300">زمان انتظار</span>
+              <span>{" 3-6 دقیقه "}</span>
             </div>
             
             {/* Status Badge */}
             <div className="py-1 px-4 backdrop-blur-sm bg-green-500/30 rounded-md text-sm text-white border border-green-400/50">
-              Open
+              باز
             </div>
           </div>
         </div>
