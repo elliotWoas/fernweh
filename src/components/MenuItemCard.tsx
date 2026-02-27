@@ -87,7 +87,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
         // focus:outline-none
         // transition
         >
-          گارسون
+       گارسون
       </button>
       <span className="text-lg font-semibold text-gray-900">
         {price} <span className="text-xs text-gray-500">تومان</span>
