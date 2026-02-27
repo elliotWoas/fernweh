@@ -3,11 +3,65 @@ import React from "react";
 // import phoneIcon from "../assets/phone.svg";
 // import cafe from "../assets/icons/cafe.webp";
 
-const MenuHeader: React.FC = () => (
+type AuthUser = {
+  name: string;
+  email: string;
+};
+
+interface MenuHeaderProps {
+  currentUser: AuthUser | null;
+  onLoginClick: () => void;
+  onLogout: () => void;
+}
+
+const UserIcon: React.FC = () => (
+  <svg
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+    className="w-5 h-5"
+    aria-hidden="true"
+  >
+    <path
+      d="M12 12c2.485 0 4.5-2.015 4.5-4.5S14.485 3 12 3 7.5 5.015 7.5 7.5 9.515 12 12 12Zm0 2.25c-3.728 0-6.75 3.022-6.75 6.75h13.5c0-3.728-3.022-6.75-6.75-6.75Z"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+const MenuHeader: React.FC<MenuHeaderProps> = ({ currentUser, onLoginClick, onLogout }) => (
 <header className="rtl">
   <section>
     {(
       <>
+        <div className="absolute top-4 left-4 z-30 flex items-center gap-2">
+          {currentUser ? (
+            <>
+              <button
+                type="button"
+                onClick={onLogout}
+                className="relative rounded-full border border-white/60 bg-emerald-500/90 p-3 text-black shadow-lg"
+                title="خروج از حساب"
+              >
+                <UserIcon />
+                <span className="absolute -bottom-0.5 -left-0.5 h-2.5 w-2.5 rounded-full bg-green-200" />
+              </button>
+              <span className="rounded-full bg-black/35 px-3 py-1 text-xs text-white backdrop-blur-sm">
+                {`سلام ${currentUser.name}`}
+              </span>
+            </>
+          ) : (
+            <button
+              type="button"
+              onClick={onLoginClick}
+              className="rounded-full border border-white/60 bg-white/85 p-3 text-gray-800 shadow-lg"
+              title="ورود / ثبت نام"
+            >
+              <UserIcon />
+            </button>
+          )}
+        </div>
+
         {/* Cafe Logo */}
         <div className="absolute w-18 h-18 right-65 mt-[calc(100vw*3/4-84px)] rounded-full border-2 border-white/50 shadow-lg z-20 overflow-hidden">
           <img 
